@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Keycifer - Commando</title>
+<link rel="icon" type="image/x-icon" href="../favicon.png">
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+<h1>Keycifer Games!</h1>
+<a href="../index.html">Back</a>
+<center><h3>Commando</h3></center>
+<center><object id="embeddedGame" width="1280" height="720">
+    <param name="movie" value="../GameFiles/commando.swf">
+    <embed src="../GameFiles/commando.swf" width="1280" height="720" type="application/x-shockwave-flash">
+    </embed>
+</object></center>
+<center><button onclick="goFullscreen('embeddedGame'); return true">Fullscreen</button></center>\
+
+<script>
+function goFullscreen(id) {
+var element = document.getElementById(id);
+if (element.mozRequestFullScreen) {
+element.mozRequestFullScreen();
+} else if (element.webkitRequestFullScreen) {
+element.webkitRequestFullScreen();
+}
+}
+</script>
+</body>
+</html>
