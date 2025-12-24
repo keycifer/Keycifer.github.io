@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keycifer - Flood Runner 4</title>
+<link rel="icon" type="image/x-icon" href="../favicon.png">
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+<img src="../Images/Logo.png" width=722px height=170px alt="logo">
+<br>
+<a href="../index.html">Back</a>
+<center><h3>Flood Runner 4</h3></center>
+<center><object id="embeddedGame" width="1280" height="720">
+    <param name="movie" value="../GameFiles/floodrunner4.swf">
+    <embed src="../GameFiles/floodrunner4.swf" width="1280" height="720" type="application/x-shockwave-flash">
+    </embed>
+</object></center>
+<center><button onclick="goFullscreen('embeddedGame'); return true">Fullscreen</button></center>
+
+<script>
+function goFullscreen(id) {
+var element = document.getElementById(id);
+if (element.mozRequestFullScreen) {
+element.mozRequestFullScreen();
+} else if (element.webkitRequestFullScreen) {
+element.webkitRequestFullScreen();
+}
+}
+</script>
+
+<center><p>Created by Bryan Dvln</p></center>
+<center><a href="https://www.newgrounds.com/portal/view/600251" target="_blank">https://www.newgrounds.com/portal/view/600251</a></center>
+</body>
+</html>
