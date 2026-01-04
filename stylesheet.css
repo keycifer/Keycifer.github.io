@@ -29,3 +29,37 @@ button:hover {opacity: 0.5}
 object {
 scale: 1.2; 
 }
+
+.tabber {
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+width: auto;
+}
+
+.tabber:hover {
+  background-color: dodgerblue;
+}
+
+.tabby{
+margin: auto;
+overflow:auto;
+ width:50%;
+}
+
+.news{
+border: 5px outset red;
+  text-align: center;
+width: 40%;
+margin: auto;
+}
+
+.video {
+ display: block;
+  margin: 0 auto;
+}
