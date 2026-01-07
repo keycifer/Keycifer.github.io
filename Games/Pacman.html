@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Keycifer - Pacman (Flash)</title>
-<link rel="icon" type="image/x-icon" href="../favicon.png">
-<link rel="stylesheet" href="../stylesheet.css">
-<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-</head>
-<body>
-<img src="../Images/Logo.png" width=722px height=170px alt="logo">
-<br>
-<a href="../index.html">Back</a>
-<center><h3>Pacman (Flash)</h3></center>
-<center><object id="embeddedGame" width=75% height=720px>
-    <param name="movie" value="../GameFiles/pacman.swf">
-    <embed src="../GameFiles/pacman.swf" width=75% height=720px type="application/x-shockwave-flash">
-    </embed>
-</object></center>
-<center><button onclick="goFullscreen('embeddedGame'); return true">Fullscreen</button></center>
+    <head>
+        <title>Keycifer Games</title>
+        <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../stylesheet.css">
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    </head>
+    <body>
+        <div class="Header">
+            <img class="Logo" src="../Images/Logo.webp" width=57% height=auto alt="logo">
+        </div>
+        <div class="Tabby">
+            <a class="Tab" href="https://keycifer.github.io/">Home</a>
+            <p class="Tab2">|</p>
+            <a class="Tab" href="Games.html">Games</a>
+            <p class="Tab2">|</p>
+            <a class="Tab" href="Utilities.html">Utilities</a>
+            <p class="Tab2">|</p>
+            <a class="Tab" href="Bookmarklets.html">BookMarklets</a>
+            <p class="Tab2">|</p>
+            <a class="Tab" href="StonedSMP.html">Downloads</a>
+            <p class="Tab2">|</p>
+            <a class="Tab" href="About-Us.html">About Us</a>
+        </div>
+        <div class="Container">
+            <a href="../Games.html">Go Back</a>
+            <h1>Pacman (Flash)</h1>
 
-<script>
-function goFullscreen(id) {
-var element = document.getElementById(id);
-if (element.mozRequestFullScreen) {
-element.mozRequestFullScreen();
-} else if (element.webkitRequestFullScreen) {
-element.webkitRequestFullScreen();
-}
-}
-</script>
+            <center><object id="embeddedGame" width=90% height=auto>
+            <param name="movie" value="../GameFiles/pacman.swf">
+            <embed src="../GameFiles/pacman.swf" width=75% height=720px type="application/x-shockwave-flash">
+            </embed>
+            </object></center>
+            <center><button onclick="goFullscreen('embeddedGame'); return true">Fullscreen</button></center>
 
-<center><p>Recreation by Neave (Original by Namco)</p></center>
-</body>
+            <script>
+                function goFullscreen(id) {
+                    var element = document.getElementById(id);
+                    if (element.mozRequestFullScreen) {
+                        element.mozRequestFullScreen();
+                    } else if (element.webkitRequestFullScreen) {
+                        element.webkitRequestFullScreen();
+                    }
+                }
+            </script>
+
+            <p class="CenterText">Recreation by Neave (Original by Namco)</p>
+        </div>
+        <div class="Tabber">
+            <p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+        </div>
+    </body>
 </html>
