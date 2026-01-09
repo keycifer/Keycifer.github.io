@@ -58,6 +58,14 @@ body {
 }
 .GiscusDiv {
   background-color: #0C163A;
+height: 900%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 3px;
+  border-color: rgb(2, 54, 123);
+  border-style: solid;
+
 }
 .Tab {
   font-size: 30px;
