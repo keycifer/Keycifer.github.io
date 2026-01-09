@@ -1,3 +1,6 @@
+body {
+  cursor: url('Images/cursor.png'), auto;
+}
 
 .Logo {
   display: block;
@@ -52,6 +55,9 @@
   border-width: 3px;
   border-color: rgb(2, 54, 123);
   border-style: solid;
+}
+.GiscusDiv {
+  background-color: #0C163A;
 }
 .Tab {
   font-size: 30px;
@@ -114,6 +120,19 @@ button:hover {opacity: 0.5}
 
 object {
 scale: 1.2; 
+}
+
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.GamesGrid {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: auto auto auto;
 }
 
 .ImgButton {
