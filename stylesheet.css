@@ -1,5 +1,5 @@
 body {
-  cursor: url('Images/cursor.png'), auto;
+  cursor: url("Images/cursor.png"), auto;
 }
 
 .Logo {
@@ -12,10 +12,10 @@ body {
   background-image: url("Images/Banner.webp");
   background-size: cover;
   height: 90%;
-  width: 50%;
+  width: 52%;
   margin-left: auto;
   margin-right: auto;
-  border-width: 3px;
+  border-width: 2px;
   border-color: rgb(2, 54, 123);
   border-style: solid;
 }
@@ -23,23 +23,25 @@ body {
 .Tabby {
   background-color: rgb(0,108,165);
   height: 90%;
-  width: 50%;
+  width: 52%;
   margin-left: auto;
   margin-right: auto;
-  border-width: 3px;
+  border-width: 2px;
   border-color: rgb(2, 54, 123);
   border-style: solid;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  text-indent: 6px;
 }
 .Tabber {
   background-color: rgb(0,108,165);
-  height: 90%;
-  width: 50%;
+  height: 10%;
+  width: 52%;
   margin-left: auto;
   margin-right: auto;
-  border-width: 3px;
+  border-width: 2px;
   border-color: rgb(2, 54, 123);
   border-style: solid;
   display: flex;
@@ -49,27 +51,34 @@ body {
 .Container {
   background-color: rgb(141, 142, 248);
   height: 900%;
-  width: 50%;
+  width: 52%;
   margin-left: auto;
   margin-right: auto;
-  border-width: 3px;
+  border-width: 2px;
   border-color: rgb(2, 54, 123);
   border-style: solid;
 }
 .GiscusDiv {
   background-color: #0C163A;
-height: 900%;
-  width: 50%;
+  height: 900%;
+  width: 52%;
   margin-left: auto;
   margin-right: auto;
-  border-width: 3px;
+  border-width: 2px;
   border-color: rgb(2, 54, 123);
   border-style: solid;
 
 }
 .Tab {
-  font-size: 30px;
+  font-size: 24px;
   color: white;
+  text-decoration: none;
+}
+.Tab:hover{
+  text-decoration: underline;
+}
+.Tab:visited {
+  text-decoration: none;
 }
 .Tab2 {
   font-size: 20px;
@@ -78,6 +87,12 @@ height: 900%;
 
 .CenterText {
   text-align: center;
+}
+
+.StonedDiv {
+  position: absolute;
+  width: 45%;
+  height: 70%;
 }
 a {
   color: rgb(4, 0, 255);
@@ -160,7 +175,7 @@ scale: 1.2;
   display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
-width: auto;
+  width: auto;
 }
 
 .tabber:hover {
@@ -178,12 +193,34 @@ overflow:auto;
   background-color: #0496C7;
   text-align: center;
   width: 70%;
+  margin-left: 250px;
+  position: relative;
+}
+
+.Hall{
+  border: 5px outset rgb(54, 38, 232);
+  background-color: #0496C7;
+  text-align: center;
+  width: 50%;
   margin: auto;
+  position: relative;
 }
 
 .video {
  display: block;
   margin: 0 auto;
+}
+
+textarea {
+  width: 35%;
+  height: 140px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid rgb(54, 38, 232);
+  border-radius: 4px;
+  background-color: #96b3ef;
+  font-size: 16px;
+  resize: none;
 }
 
 @font-face {
