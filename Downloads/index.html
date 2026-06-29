@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Keycifer Games</title>
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div id="sidebar"></div>
+				<main class="main-content">
+					<div id="banner"></div>
+					<h1>Downloads!</h1>
+					
+					<section class="newest-games">
+						<h2>Stoned SMP</h2>
+						<p>Stoned SMP is a Minecraft SMP we do. Here is where we archive the world downloads.</p>
+						<a href="https://pixeldrain.com/u/WEhJFMWW">Download 1 - 12/28/25 (pixel drain)</a>
+					</section>
+
+					<section class="hall-of-fame">
+						<h2>Resources 2026</h2>
+						<p>A zip folder containing various images/screenshots from Keycifer from 2025-2026</p>
+						<a href="https://keycifer.github.io/Downloads/Keycifer Resources.zip">Download ZIP file (12 KB)</a>
+					</section>
+					
+					<section class="newest-games">
+						<h2>Aranorten Archive</h2>
+						<p>Essentially proto Keycifer- (Thats why it says 2020-2026 at the footer). It contains downloads to the previous installments!</p>
+						<!--<a href="https://pixeldrain.com/u/WEhJFMWW">Click here to view</a>-->
+						<p>soon!</p>
+					</section>
+				</main>
+			</div>
+			
+			<footer>
+				<p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+			</footer>
+		</div>
+		
+		<script>
+fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sidebar").innerHTML = data;
+    });
+
+fetch("banner.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("banner").innerHTML = data;
+    });
+</script>
+	</body>
+</html>
