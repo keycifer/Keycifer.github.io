@@ -1,45 +1,69 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-        <title>Keycifer - KeyTube</title>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="stylesheet.css">
-        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-        <script src="KeyTube.js"></script>
-    </head>
-	  <body>
-      <div class="Header">
-            <img class="Logo" src="Images/Logo.webp" width=57% height=auto alt="logo">
-        </div>
-        <div class="Tabby">
-            <a class="Tab" href="https://keycifer.github.io/">Home</a>
-            <p class="Tab2">|</p>
-            <a class="Tab" href="Games.html">Games</a>
-            <p class="Tab2">|</p>
-            <a class="Tab" href="Utilities.html">Utilities</a>
-            <p class="Tab2">|</p>
-            <a class="Tab" href="Bookmarklets.html">BookMarklets</a>
-            <p class="Tab2">|</p>
-            <a class="Tab" href="StonedSMP.html">Downloads</a>
-            <p class="Tab2">|</p>
-            <a class="Tab" href="About-Us.html">About Us</a>
-        </div>
-        <div class="Container">
-          <h1>KeyTube!</h1>
-            <center><p>KeyTube allows you to insert any YouTube link to bypass YouTube being blocked.</p></center>
-            <center><input class="fade-in" placeholder="Youtube Link" id="link" /></center><br />
-            <center><button class="fade-in" onclick="fix_link()">Open</button></center> <br />
-            <center><iframe
-              loading
-              id="video"
-              width="650"
-              height="425"
-              frameborder="0"
-              src=" "
-              allowfullscreen
-            ></iframe></center>
-        </div>
+	<head>
+		<title>Keycifer - KeyTube</title>
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="KeyTube.js"></script>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div id="sidebar"></div>
+
+				<main class="main-content">
+					<div id="banner"></div>
+					<h1>KeyTube!</h1>
+
+					<section class="featured">
+						<center><p>KeyTube allows you to insert any YouTube link to bypass YouTube being blocked.</p></center>
+					</section>
+					
+					<section class="featured">
+						<center><input class="fade-in" placeholder="Youtube Link" id="link" /></center>
+					</section>
+					
+					<section class="featured">
+						<br><br><br><button class="fade-in" onclick="fix_link()">Open</button></center>
+					</section>
+					
+					<section class="newest-games">
+						<center><iframe
+						  loading
+						  id="video"
+						  width="650"
+						  height="425"
+						  frameborder="0"
+						  src=" "
+						  allowfullscreen
+						></iframe></center>
+					</section>
+				</main>
+			</div>
+			
+			<footer>
+				<p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+			</footer>
+			
+			
+		</div>
+		
+		<script>
+fetch("sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sidebar").innerHTML = data;
+    });
+
+fetch("banner.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("banner").innerHTML = data;
+    });
+</script>
 	</body>
 </html>
