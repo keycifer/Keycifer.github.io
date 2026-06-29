@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Keycifer Games</title>
+		<link rel="icon" type="image/x-icon" href="../favicon.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div id="sidebar"></div>
+				
+				<main class="main-content">
+					<div id="banner"></div>
+					
+					<section class="newest-games">
+						<a href="index.html">Go Back</a>
+						<h1 id="gameTitle">Loading...</h1>
+						
+						<object id="embeddedGame" >
+							<param id="gameParam" name="movie"/>
+
+							<embed id="gameEmbed" type="application/x-shockwave-flash" />
+						</object>
+						
+						<br><br>
+
+						<center><button onclick="goFullscreen('embeddedGame')">
+							Fullscreen
+						</button></center>
+						
+						<p class="CenterText" id="creatorText"></p>
+						<a id="creatorButton" target="_blank" style="display:none;">
+							<img id="buttonImage" class="ImgButton">
+						</a>
+						<a id="creatorButton2" target="_blank" style="display:none;">
+							<img id="buttonImage2" class="ImgButton2">
+						</a>
+
+					</section>
+				</main>
+			</div>
+	
+			<footer>
+				<p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+			</footer>
+		</div>
+
+		<script>
+			fetch("../sidebar.html").then(response => response.text()).then(data => {
+				document.getElementById("sidebar").innerHTML = data;
+			});
+
+fetch("../banner.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("banner").innerHTML = data;
+    });
+			const games = {
+
+				bloxorz: {
+					title: "Bloxorz",
+					creator: "Damien Clarke",
+					file: "../GameFiles/bloxorz.swf"
+				},
+
+				bloons: {
+					title: "Bloons Tower Defense",
+					creator: "Ninja Kiwi",
+					file: "../GameFiles/bloons-tower-defence.swf"
+					
+					button: {
+						image: "../Images/Buttons/KiwiButton.png",
+						link: "https://ninjakiwi.com/"
+					}
+				},
+
+				bloons2: {
+					title: "Bloons Tower Defense 2",
+					creator: "Ninja Kiwi",
+					file: "../GameFiles/bloons-tower-defence-2.swf"
+					
+					button: {
+						image: "../Images/Buttons/KiwiButton.png",
+						link: "https://ninjakiwi.com/"
+					}
+				}
+				
+				bloons3: {
+					title: "Bloons Tower Defense 3",
+					creator: "Ninja Kiwi",
+					file: "../GameFiles/bloons-tower-defence-3.swf"
+					
+					button: {
+						image: "../Images/Buttons/KiwiButton.png",
+						link: "https://ninjakiwi.com/"
+					}
+				}
+				bobRobber: {
+					title: "Bob the Robber",
+					creator: "Flazm",
+					file: "../GameFiles/bob-the-robber.swf"
+					
+					button: {
+						image: "../Images/Buttons/FButton.png",
+						link: "https://flazm.com/allgames"
+					}
+				}
+				issac: {
+					title: "Binding of Issac (Demo)",
+					creator: "Edmund McMillen and Florian Himsl",
+					file: "../GameFiles/bob-the-robber.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/581168"
+					}
+					button2: {
+						image: "../Images/Buttons/SteamButton.gif",
+						link: "https://store.steampowered.com/app/113200/The_Binding_of_Isaac/"
+					}
+				}
+				bbs: {
+					title: "Eddsworld's Bang Boom Splat",
+					creator: "Edd Gould and Psycosis91",
+					file: "../GameFiles/Bang-Boom-Splat.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/450778"
+					}
+				}
+				commando: {
+					title: "Commando",
+					creator: "Miniclip",
+					file: "../GameFiles/commando.swf"
+					
+					button: {
+						image: "../Images/Buttons/SteamButton.gif",
+						link: "https://store.steampowered.com/app/3059010/Commando_Collection/"
+					}
+				}
+				duckLife: {
+					title: "Duck Life",
+					creator: "Wix Games",
+					file: "../GameFiles/duck-life-1.swf"
+				}
+				fpa: {
+					title: "Fancy Pants Adventure",
+					creator: "DrNeroCF",
+					file: "../GameFiles/the-fancy-pants-adventure-1.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/301341"
+					}
+				}
+				fpa2: {
+					title: "Fancy Pants Adventure 2",
+					creator: "DrNeroCF",
+					file: "../GameFiles/the-fancy-pants-adventure-2.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/420606"
+					}
+				}
+				floodRunner4: {
+					title: "Flood Runner 4",
+					creator: "Bryan Dvln",
+					file: "../GameFiles/floodrunner4.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/600251"
+					}
+				}
+				henry: {
+					title: "Henry Stickman Breaking the Bank (Flash ver)",
+					creator: "PuffballsUnited",
+					file: "../GameFiles/henry-stickmin-breaking-the-bank.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/457209"
+					}
+					button2: {
+						image: "../Images/Buttons/SteamButton.gif",
+						link: "https://store.steampowered.com/app/1089980/The_Henry_Stickmin_Collection/"
+					}
+				}
+				madnessAccelerant: {
+					title: "Madness Accelerant",
+					creator: "Tom Fulp + Krinkels + MindChamber",
+					file: "../GameFiles/Madness Accelerant.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/512407"
+					}
+				}
+				pacman: {
+					title: "Pacman (Flash)",
+					creator: "Neave (Original by Namco)",
+					file: "../GameFiles/pacman.swf"
+				}
+				papaPizza: {
+					title: "Papa's Pizzeria",
+					creator: "Flipline Studios",
+					file: "../GameFiles/papas-pizzeria.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/540919"
+					}
+				}
+				whg: {
+					title: "The World's Hardest Game",
+					creator: "Snubby",
+					file: "../GameFiles/the-world's-hardest-game.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/431039"
+					}
+				}
+				impossibleQuiz: {
+					title: "The Impossible Quiz",
+					creator: "splapp-me-do",
+					file: "../GameFiles/the-impossible-quiz.swf"
+					
+					button: {
+						image: "../Images/Buttons/NGButton.png",
+						link: "https://www.newgrounds.com/portal/view/365143"
+					}
+				}
+			};
+
+			const params = new URLSearchParams(window.location.search);
+			const game = params.get("game");
+
+			if (games[game]) {
+
+				document.getElementById("gameTitle").textContent = games[game].title;
+				document.getElementById("creatorText").textContent = "Created by " + games[game].creator;
+				document.getElementById("gameParam").value = games[game].file;
+				document.getElementById("gameEmbed").src = games[game].file;
+					
+				if (games[game].button) {
+					document.getElementById("creatorButton").style.display = "inline-block";
+					document.getElementById("creatorButton").href = games[game].button.link;
+					document.getElementById("buttonImage").src = games[game].button.image;
+				}
+				
+				if (games[game].button2) {
+					document.getElementById("creatorButton2").style.display = "inline-block";
+					document.getElementById("creatorButton2").href = games[game].button2.link;
+					document.getElementById("buttonImage2").src = games[game].button2.image;
+				}
+			}
+
+			function goFullscreen(id) {
+
+				var element = document.getElementById(id);
+
+				if (element.requestFullscreen) {
+					element.requestFullscreen();
+				}
+				else if (element.webkitRequestFullscreen) {
+					element.webkitRequestFullscreen();
+				}
+				else if (element.mozRequestFullScreen) {
+					element.mozRequestFullScreen();
+				}
+			}
+			
+		</script>
+	</body>
+</html>
