@@ -1,0 +1,340 @@
+body {
+	cursor: url("Images/cursor.png"), auto;
+}
+
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+
+/* Container layout */
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+	width: 160px;
+	background-color: #AA0606;
+	color: white;
+  
+	border-width: 2px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+.sidebar .logo {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000000;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin-top: -10px;
+}
+
+.sidebar ul li {
+	padding: 10px;
+	font-family: badaga;
+  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.newsTxt {
+	text-decoration: underline;
+}
+
+.bruh {
+	background-image: url("Images/TabButtons.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	width: 100%;
+	display: block;        /* important for <a> */
+	text-decoration: none; /* removes underline */
+	color: inherit;        /* keeps text color consistent */
+	
+	border-bottom: 1px solid #fff;
+	
+
+	
+	font-family: badaga;
+}
+
+.bruh:hover{
+	text-decoration: underline;
+	color: #0011FF;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  background-color: #377D7D;
+  padding: 0;
+	border-bottom: 2px solid #000000;
+	border-right: 2px solid #000000;
+}
+/* Banner: full width of main content */
+.banner {
+	width: 100%;                /* fill entire main-content width */
+	height: 161px;              /* desired height */
+	background-image: url("Images/Banner.webp");
+	background-size: cover;     /* fill the area completely */
+	background-repeat: no-repeat;
+	background-position: top;     /* show the top part of the image */
+	display: flex;
+	align-items: center;        /* vertical center text */
+	padding-left: 10px;         /* small spacing from left for text */
+	box-sizing: border-box;
+	border-width: 2px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+/* "Welcome to" text */
+.banner-text {
+  flex: 0 0 auto;
+  padding: 10px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 48px;
+  color: white;
+}
+
+/* Banner image on the right */
+.banner-image-container {
+  flex: 1;
+  overflow: hidden;          /* ensure image stays inside container */
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* cover full container */
+  object-position: top;       /* show top part of image (sky) */
+}
+
+/* Featured section */
+.featured {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+.featured-img {
+	width: 220px;
+	height: auto;
+}
+
+/* Button styling */
+.button-container {
+	position: relative;
+	left: 170px;
+}
+
+/* Keycifer Games section */
+.keycifer-games {
+  padding: 15px 20px;
+  color: black;
+}
+
+/* Newest Games */
+.newest-games {
+	background-color: #370504;
+	padding: 10px;
+}
+
+.hall-of-fame {
+	background-color: #FF8975;
+	padding: 10px;
+}
+
+.games-placeholder, .hall-placeholder {
+  min-height: 100px;
+  border: 1px dashed #ccc;
+  margin-top: 10px;
+}
+
+.Hall{
+	border: 5px outset rgb(227, 97, 27);
+	background-color: #A32C2C;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	position: relative;
+}
+
+.txtHeader {
+	color: black;
+	font-size: 24px;
+	font-family: badaga;
+	text-align: center;
+	font-weight: bold;
+}
+
+.ImgButton:hover {
+	opacity: 0.5
+}
+
+p {
+	color: white;
+	font-size: 18px;
+	font-family: badaga;
+}
+
+a {
+	color: #2E8CFF;
+	font-size: 18px;
+	font-family: badaga;
+}
+
+h1 {
+	color: #55E2E9;
+	text-align: center;
+	font-size: 40px;
+	font-family: Quenda;
+}
+
+h2 {
+	color: #02367B;
+	text-align: center;
+	font-size: 27px;
+	font-family: Quenda;
+}
+h4 {
+	color: #02367B;
+	font-family: Quenda;
+}
+
+textarea {
+	width: 150%;
+	height: 140px;
+	padding: 12px;
+	box-sizing: border-box;
+	border: 2px solid rgb(54, 38, 232);
+	border-radius: 4px;
+	background-color: #96b3ef;
+	font-size: 16px;
+	resize: none;
+}
+
+button {
+	font-weight: bold;
+	background-color: rgb(11, 190, 44);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	padding: 10px 30px;
+	transition: 0.3s;
+	font-family: badaga;
+	font-size: 23px;
+}
+button:hover {opacity: 0.5}
+
+.cdList {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.cdList li {
+    position: relative;
+	color: white;
+	font-size: 18px;
+	font-family: badaga;
+}
+
+.cdList li::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 2px;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url('Images/spinningcd.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.codeText {
+	width: 90%;
+	height: 140px;
+	padding: 12px;
+	box-sizing: border-box;
+	border: 2px solid rgb(54, 38, 232);
+	border-radius: 4px;
+	background-color: #96b3ef;
+	font-size: 16px;
+	resize: none;
+}
+
+.image-table {
+    display: flex;
+	row-gap: 20px;
+    column-gap: 70px;            /* space between items */
+    justify-content: left;  /* left to right */
+    flex-wrap: wrap;        /* moves to next row if needed */
+}
+
+.item {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 150px;
+}
+
+.item img {
+    width: 175px;
+    height: 130px;
+    object-fit: cover;
+    border: 2px solid black;
+    transition: transform 0.2s;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+	padding: 10px;
+	background-color: #AA0606;
+}
+
+footer p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.GiscusDiv {
+	background-color: #70120A;
+	height: 900%;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 2px;
+	border-color: rgb(2, 54, 123);
+	border-style: solid;
+}
+
+@font-face {
+  font-family: badaga; /* set name */
+  src: url(Fonts/badaga.ttf); /* url of the font */
+}
+@font-face {
+  font-family: Quenda; /* set name */
+  src: url(Fonts/Quenda-Medium.otf); /* url of the font */
+}
+
+#embeddedGame {
+	width: 75%;
+	height: 720px;
+}
+
+.CenterText {
+	margin-top: 20px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Keycifer Games</title>
+		<link rel="icon" type="image/x-icon" href="favicon.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div id="sidebar"></div>
+
+				<main class="main-content">
+					<div id="banner"></div>
+					<h1>Utilities</h1>
+
+					<section class="featured">
+						<p>Utilities made that are related to bypassing stuff lol</p>
+					</section>
+					
+					<section class="newest-games">
+						<a href="KeyTube.html">
+							<center><img class="ImgButton" src="../Images/KeyTubelogo.png" width=16% height=auto></center>
+						</a>
+						<center><p>Tool that lets you bypass blocked YouTube links by pasting link wit the website.</p></center>
+					</section>
+				</main>
+			</div>
+			
+			<footer>
+				<p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+			</footer>
+			
+			
+		</div>
+		
+		<script>
+fetch("../sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sidebar").innerHTML = data;
+    });
+
+fetch("../banner.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("banner").innerHTML = data;
+    });
+</script>
+	</body>
+</html>
