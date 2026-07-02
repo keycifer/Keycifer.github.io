@@ -76,10 +76,10 @@ main {
   --color-fg-subtle: #545d68;
 
   /* Background */
-  --color-canvas-default: #192734;
-  --color-canvas-overlay: #161b22;
+  --color-canvas-default: #7f0606;
+  --color-canvas-overlay: #49020c;
   --color-canvas-inset: #15202b;
-  --color-canvas-subtle: #253341;
+  --color-canvas-subtle: #ff5a5a;
 
   /* Borders */
   --color-border-default: rgba(173, 8, 9, 0.96);
