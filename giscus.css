@@ -50,7 +50,7 @@ main {
   --color-btn-selected-bg: #2d333b;
 
   --color-btn-primary-text: #fff;
-  --color-btn-primary-bg: #347d39;
+  --color-btn-primary-bg: #2627cc;
   --color-btn-primary-border: #cdd9e51a;
   --color-btn-primary-shadow: 0 0 #0000;
   --color-btn-primary-inset-shadow: 0 0 #0000;
@@ -146,7 +146,7 @@ main .pagination-loader-container {
 }
 
 .gsc-homepage-bg {
-  background-color: #15202b;
+  background-color: #681212;
 }
 
 main .gsc-loading-image {
