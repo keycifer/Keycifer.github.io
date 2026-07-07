@@ -1,14 +1,17 @@
 body {
+
 	cursor: url("Images/cursor.png"), auto;
 }
 
 .wrapper {
+	 height: 89.2dvh;
   width: 860px;
   margin: 0 auto;
 }
 
 .container {
   display: flex;
+	height: 100%;
 }
 
 .newsContainer {
@@ -21,6 +24,7 @@ body {
 
 .sidebar {
 	width: 160px;
+	height: 100%;
 	background-color: #AA0606;
 	color: white;
   
@@ -62,8 +66,8 @@ body {
 	background-repeat: no-repeat;
 	
 	width: 100%;
-	display: block; 
-	text-decoration: none; 
+	display: block;  
+	text-decoration: none;
 	color: inherit;
 	
 	border-bottom: 1px solid #fff;
@@ -80,6 +84,8 @@ body {
 
 .main {
 	flex: 1;
+    display: flex;
+	flex-direction: column;
 	padding: 0;
 	border-bottom: 2px solid #000000;
 	border-right: 2px solid #000000;
@@ -87,12 +93,11 @@ body {
 
 .main-content {
 	flex: 1;
+    overflow-y: auto;
 	background-color: #377D7D;
 	padding: 0;
 	border-bottom: 2px solid #000000;
 	border-right: 2px solid #000000;
-	overflow-y: scroll;
-	height: 70.3vh;;
 }
 
 .banner {
