@@ -99,6 +99,14 @@ body {
 	border-bottom: 2px solid #000000;
 	border-right: 2px solid #000000;
 }
+.main-content2 {
+	flex: 1;
+    overflow-y: auto;
+	background-color: #000000;
+	padding: 0;
+	border-bottom: 2px solid #000000;
+	border-right: 2px solid #000000;
+}
 
 .banner {
 	width: 100%;
@@ -349,4 +357,80 @@ footer p {
 
 .CenterText {
 	margin-top: 20px;
+}
+
+.secondaryDiv {
+	background-color: black;
+	gap: 20px;
+	padding: 20px;
+	height: 170%;
+}
+.bannerDiv {
+	background-image: url(Images/headingBanner.webp);
+	width: 90%;
+	height: 7%;
+	margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+	color: white;
+	font-size: 18px;
+	font-family: badaga;
+	
+	text-align: center;
+}
+
+.bundle {
+	width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #bff;
+    font-family: badaga;
+    font-size: 18px;
+}
+
+.yellow {
+	color: #ffaf1b;
+	font-size: 18px;
+	font-family: badaga;
+}
+.blue {
+	color: #8af6ff;
+	font-size: 18px;
+	font-family: badaga;
+}
+.green {
+	color: #8affa2;
+	font-size: 18px;
+	font-family: badaga;
+}
+.leftt,
+.centerr,
+.rightt {
+    flex: 1;
+}
+
+.leftt {
+    text-align: left;
+}
+.centerr {
+    text-align: center;
+	color: #ff37a7;
+}
+.rightt {
+    text-align: right;
+	color: white;
+}
+
+.leftt a {
+    color: rgb(219, 2, 40);
+}
+.leftt a:Hover {
+    color: rgb(255, 213, 220);
 }
