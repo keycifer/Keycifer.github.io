@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+}
+
+.mainDiv {
+    width: 100%;
+    height: 30%;
+    background-image: url(images/checker.webp);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 500px 300px;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+
+.enterBtn {
+    display: inherit;
+}
+.enterBtnInactive{
+    display: none;
+}
+
+a:hover img.enterBtn {
+    display: none;
+}
+a:hover img.enterBtnInactive {
+    display: inherit;
+}
+
+.coolRow {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
