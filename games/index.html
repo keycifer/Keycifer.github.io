@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Keycifer Games</title>
+		<link rel="icon" type="image/x-icon" href="../favicon.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div id="sidebar"></div>
+				
+				<main class="main">
+					<div id="banner"></div>
+					
+					<div class="main-content">
+						<section class="hall-of-fame">
+						<h1>Games!</h1>
+						<div class="image-table">
+
+						<a href="game.html?game=bloxorz" class="item">
+							<img src="../Images/GameImages/bloxorzIcon.webp">
+							<p>Bloxorz</p>
+						</a>
+
+						<a href="game.html?game=bloons" class="item">
+							<img src="../Images/GameImages/bloonsIcon.webp">
+							<p>Bloons Tower Defense</p>
+						</a>
+
+						<a href="game.html?game=bloons2" class="item">
+							<img src="../Images/GameImages/bloonsIcon2.webp">
+							<p>Bloons Tower Defense 2</p>
+						</a>
+							
+						<a href="game.html?game=bloons3" class="item">
+							<img src="../Images/GameImages/bloons3Icon.webp">
+							<p>Bloons Tower Defense 3</p>
+						</a>
+							
+						<a href="game.html?game=bobRobber" class="item">
+							<img src="../Images/GameImages/bobtherobberIcon.webp">
+							<p>Bob the Robber</p>
+						</a>
+							
+							<a href="game.html?game=issac" class="item">
+								<img src="../Images/GameImages/boiIcon.webp">
+								<p>Binding of Issac (Demo)</p>
+							</a>
+							
+							<a href="game.html?game=bbs" class="item">
+								<img src="../Images/GameImages/eddIcon.webp">
+								<p>Bang Boom Splat (Eddsworld)</p>
+							</a>
+							
+							<a href="https://keycifer.github.io/Games/Celeste/" target="_blank" class="item">
+								<img src="../Images/GameImages/celesteIcon.webp">
+								<p>Celeste (Classic)</p>
+							</a>
+							
+							<a href="game.html?game=commando" class="item">
+								<img src="../Images/GameImages/commandoIcon.webp">
+								<p>Commando</p>
+							</a>
+							<a href="game.html?game=duckLife" class="item">
+								<img src="../Images/GameImages/ducklifeIcon.webp">
+								<p>Duck Life</p>
+							</a>
+							
+							<a href="https://ustymukhman.github.io/webDOOM/public/" target="_blank" class="item">
+								<img src="../Images/GameImages/doomIcon.webp">
+								<p>Doom + Doom 2 (SHAREWARE) [recompiled by Ustym Ukhman]</p>
+							</a>
+							
+							<a href="game.html?game=fpa" class="item">
+								<img src="../Images/GameImages/fancypants1Icon.webp">
+								<p>Fancy Pants Adventure</p>
+							</a>
+							<a href="game.html?game=fpa2" class="item">
+								<img src="../Images/GameImages/fancypants2Icon.webp">
+								<p>Fancy Pants Adventure 2</p>
+							</a>
+							<a href="game.html?game=floodRunner4" class="item">
+								<img src="../Images/GameImages/floodrunner4Icon.webp">
+								<p>Flood Runner 4</p>
+							</a>
+							<a href="game.html?game=henry" class="item">
+								<img src="../Images/GameImages/henryIcon.webp">
+								<p>Henry Stickman: Breaking the Bank</p>
+							</a>
+							
+							<a href="game.html?game=madnessAccelerant" class="item">
+								<img src="../Images/GameImages/maddnessaccelerantIcon.webp">
+								<p>Madness Accelerant</p>
+							</a>
+							<a href="game.html?game=pacman" class="item">
+								<img src="../Images/GameImages/pacmanflashIcon.webp">
+								<p>Pacman (Flash version)</p>
+							</a>
+							<a href="game.html?game=papaPizza" class="item">
+								<img src="../Images/GameImages/papaspizzeriaIcon.webp">
+								<p>Papa's Pizzeria</p>
+							</a>
+							<a href="https://keycifer.github.io/Games/slope/index.html" target="_blank" class="item">
+								<img src="../Images/GameImages/slopeIcon.webp">
+								<p>Slope</p>
+							</a>
+							<a href="game.html?game=whg" class="item">
+								<img src="../Images/GameImages/whgIcon.webp">
+								<p>World's Hardest Game</p>
+							</a>
+							<a href="game.html?game=impossibleQuiz" class="item">
+								<img src="../Images/GameImages/impossiblequizIcon.webp">
+								<p>The Impossible Quiz</p>
+							</a>
+						</div>
+					</section>
+				</div>
+				</main>
+			</div>
+			
+			<footer>
+				<p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+			</footer>
+		</div>
+		
+		<script>
+fetch("../sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sidebar").innerHTML = data;
+    });
+
+fetch("../banner.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("banner").innerHTML = data;
+    });
+</script>
+	</body>
+</html>

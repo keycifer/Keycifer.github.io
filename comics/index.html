@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Keycifer Comics!!</title>
+		<link rel="icon" type="image/x-icon" href="../favicon.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div id="sidebar"></div>
+				
+				<main class="main">
+					<div id="banner"></div>
+					
+					<div class="main-content">
+					
+					<h1>Comics</h1>
+
+					<section class="newest-games">
+                        <img src="k%20comics%201.png" alt="Comics" width=66% height=auto>
+						
+					</section>
+					
+					</div>
+				</main>
+			</div>
+			
+			<footer>
+				<p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+			</footer>
+			
+			
+		</div>
+		
+		<script>
+fetch("../sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sidebar").innerHTML = data;
+    });
+
+fetch("../banner.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("banner").innerHTML = data;
+    });
+</script>
+	</body>
+</html>

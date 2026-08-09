@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Keycifer Games</title>
+		<link rel="icon" type="image/x-icon" href="../favicon.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div id="sidebar"></div>
+				
+				<main class="main">
+					<div id="banner"></div>
+					<div class="main-content">
+					<h1>Bookmarklets</h1>
+
+					<section class="featured">
+						<p>Drag the buttons onto your bookmark bar and click it to use it</p>
+					</section>
+					
+					<section class="featured">
+						<p>(If your bookmarklet thing is blocked, then go on Github and try to look for a repo that bypasses it. The code is provided so you can paste them until we actually add a Bookmarklet bypasser here)</p>
+					</section>
+					
+					<section class="newest-games">
+						<a class="bmrklet" href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())"> Inspect </a> <br/>
+						<textarea readonly class="codeText">javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())
+						</textarea>
+						
+						<br>
+						
+						<a class="bmrklet" href="javascript:(function() { window.location.replace(`https://translate.google.com/translate?u=${location}&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US`);})();"> Google Translate </a>
+						<br>
+						<textarea readonly class="codeText">javascript:(function() { window.location.replace(`https://translate.google.com/translate?u=${location}&_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US`);})();
+						</textarea>
+						
+					</section>
+				</div>
+				</main>
+			</div>
+			
+			<footer>
+				<p>Totally ©2020-2026 Keycifer not fake and totally real.</p>
+			</footer>
+		</div>
+		
+		<script>
+fetch("../sidebar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sidebar").innerHTML = data;
+    });
+
+fetch("../banner.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("banner").innerHTML = data;
+    });
+</script>
+	</body>
+</html>
