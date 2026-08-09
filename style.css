@@ -1,6 +1,6 @@
 body {
 
-	cursor: url("Images/cursor.png"), auto;
+	cursor: url("images/cursor.png"), auto;
 }
 
 .wrapper {
@@ -27,7 +27,7 @@ body {
 	height: 100%;
 	background-color: #AA0606;
 	color: white;
-  
+
 	border-width: 2px;
 	border-color: #000000;
 	border-style: solid;
@@ -49,7 +49,7 @@ body {
 .sidebar ul li {
 	padding: 10px;
 	font-family: badaga;
-  
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -60,20 +60,20 @@ body {
 }
 
 .bruh {
-	background-image: url("Images/TabButtons.png");
+	background-image: url("images/TabButtons.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	
+
 	width: 100%;
-	display: block;  
+	display: block;
 	text-decoration: none;
 	color: inherit;
-	
-	border-bottom: 1px solid #fff;
-	
 
-	
+	border-bottom: 1px solid #fff;
+
+
+
 	font-family: badaga;
 }
 
@@ -111,7 +111,7 @@ body {
 .banner {
 	width: 100%;
 	height: 161px;
-	background-image: url("Images/Banner.webp");
+	background-image: url("images/Banner.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top;
@@ -277,7 +277,7 @@ button:hover {opacity: 0.5}
     width: 20px;
     height: 20px;
 
-    background-image: url('Images/spinningcd.gif');
+    background-image: url("images/spinningcd.gif");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -366,7 +366,7 @@ footer p {
 	height: 170%;
 }
 .bannerDiv {
-	background-image: url(Images/headingBanner.webp);
+	background-image: url(images/headingBanner.webp);
 	width: 90%;
 	height: 7%;
 	margin: 0 auto;
@@ -374,11 +374,11 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-	
+
 	color: white;
 	font-size: 18px;
 	font-family: badaga;
-	
+
 	text-align: center;
 }
 
