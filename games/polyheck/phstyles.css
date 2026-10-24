@@ -1,0 +1,77 @@
+body {
+    background-image: url("bg.webp");
+    background-position: center;
+    background-size: contain;
+}
+
+.container {
+    max-width: 940px;
+    margin: 10px auto;
+    display: grid;
+    background-color: white;
+}
+
+header {
+    height: 100px;
+    background-color: blue;
+    background-image: url("heading.webp");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 600px;
+    background-color: white;
+}
+
+.text2 {
+    width: 500px;
+}
+
+.text3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleDiv {
+    width: 100%;
+    display: flex;
+}
+
+.section1 {
+    width: 390px;
+}
+.section2 {
+    width: 190px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+h2 {
+    color: white;
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+}
+
+p {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+a {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
